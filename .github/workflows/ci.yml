@@ -1,0 +1,16 @@
+name: HiveBox Continuous Intergration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: run github action job for testing purpose
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        run: echo "hello, khaled!"
+        shell: bash
